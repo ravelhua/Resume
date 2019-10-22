@@ -1,0 +1,199 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{banking}                  % optional argument are 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+%\newcommand*{\gitlabsocialsymbol}  {{\small\faGitlab}~} % <=============
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage{enumitem}
+\usepackage{lmodern}
+
+
+% adjust the page margins
+%old - still looks good if want one more line
+%\usepackage[top=1.1cm, bottom=1.2cm, left=2cm, right=2cm]{geometry}
+%current
+\usepackage[top=2.0cm, bottom=2cm, left=1.8cm, right=1.8cm]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}    					% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% Hyperlinks
+\definecolor{linkcolour}{rgb}{0,0.2,0.5}			% hyperlinks setup
+\AfterPreamble{\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=gray,pdfnewwindow=true}}
+
+% Can redefine the symbols between the details - here redefine bullet points to three spaces
+%\renewcommand*{\maketitlesymbol}{~~~}
+
+% Which color do we want for the alternate colouring on right side of page
+%\colorlet{altColor}{color1} % Choose this one for blue
+\colorlet{altColor}{color2} % Choose this one for grey
+\colorlet{normal}{color0} % Change back to black afterwards
+
+% personal data
+\name{Xia}{Hua}
+%\title{ResumÃ© title}                               % optional, remove / comment the line if not wanted
+\address{184 Study Inn, Castle Park, Cambridge, CB3 0SZ}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+44 752 914 3110}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\phone[mobile]{+86 150 5072 5611 }
+%\phone[fax]{+3~(456)~789~012}
+\email{xh300@cam.ac.uk}                      % optional, remove / comment the line if not wanted
+%\homepage{www.andrewkadis.com} %Commented out as used above instead                          % optional, remove / comment the line if not wanted
+\social[linkedin][https://www.linkedin.com/in/x-hua/]{Xia Hua} %Commented out as used above instead                         % optional, remove / comment the line if not wanted
+%\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
+\social[github][https://github.com/ravelhua/]{ravelhua} 
+
+                            % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+
+%the photo will show when \moderncvtheme[blue]{banking} is set to {mondern}
+%\photo[64pt][0.4pt]{picture.png}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\vspace*{-1.5cm}
+
+\section{Education}
+
+%\gitlabsocialsymbol
+\vspace*{-0.00cm}
+
+\cventry{}{\vspace*{-0.6cm}}{University of Cambridge}{\textnormal{\em \small\color{altColor} 2019 -- 2023\color{normal}}}{}{
+	\begin{itemize}[topsep=0.0mm, itemsep=-1.0mm, leftmargin=7.0mm]
+		\item PhD in Engineering (Optical Pre-classifier for Deep Learning)
+		\item Modules include Probabilistic Machine Learning, Deep Learning and Structured Data  
+	\end{itemize}
+}
+
+\cventry{}{\vspace*{-0.6cm}}{University of Cambridge}{\textnormal{\em \small\color{altColor} 2018 -- 2019\color{normal}}}{}{
+	\begin{itemize}[topsep=0.0mm, itemsep=-1.0mm, leftmargin=7.0mm]
+			\vspace*{0.1cm}
+		\item Master of Research (MRes) in Integrated Photonic and Electronic Systems 
+		\item Modules include Computer Vision, Optical Fibre Communication and etc.
+	\end{itemize}
+}
+
+\cventry{}{\vspace*{-0.6cm}}{University of Warwick }{\textnormal{\em \small\color{altColor} 2015 -- 2018\color{normal}}}{}{
+	\begin{itemize}[topsep=0.0mm, itemsep=1.0mm, leftmargin=7.0mm]
+		\item Bachelor of Engineering (BEng) in Engineering (General),  First Class Honours
+	\end{itemize}
+}
+
+\cventry{}{\vspace*{-0.6cm}}{Abbey College Cambridge (High School)}{\textnormal{\em \small\color{altColor} 2013 -- 2015\color{normal}}}{}{
+	\begin{itemize}[topsep=0.0mm, itemsep=1.0mm, leftmargin=7.0mm]
+		\item  A-Level Mathematics, Further Mathematics and Physics (A*A*A), AS Economics (A)
+	\end{itemize}
+}
+
+
+\section{Work Experience}
+
+\vspace*{-0.0cm}
+
+\cventry{\small\color{altColor} Jun. 2019 -- Aug. 2019}{R\&D Software Engineer\color{normal}}{VividQ}{Cambridge, UK}{}{
+	\begin{itemize}[topsep=0.0mm, itemsep=-1.0mm, leftmargin=7.0mm]
+		\vspace*{-0.1cm}	
+	 \item Implement several algorithms in MATLAB for Computer Generated Holography
+     \item Investigate the layer based algorithm to achieve full parallax for 3D holographic display
+     \item Retrieve depth layer and amplitude information from Unity through Visual Studio (C\#)
+	\end{itemize}
+}
+%\vspace*{-0.2cm}
+
+\cventry{\small\color{altColor} Jul. 2018 -- Sep. 2018}{Business Data Analyst Internship\color{normal}}{Kantar Media CIC}{Shanghai, China}{}{
+	 \begin{itemize}[topsep=0.0mm, itemsep=-1.0mm, leftmargin=7.0mm]
+	\vspace*{-0.1cm}	
+	\item Social media data mining and analysis through Python, Excel and etc.
+	\item Generate daily, semi-month, month and other reports for clients
+	\item Clients include Huawei, Qualcomm, Coca-Cola and etc. 
+	 \end{itemize}
+}
+%\vspace*{-0.2cm}
+
+\cventry{\small\color{altColor} Jul. 2017 -- Sep. 2017}{Summer Research Internship\color{normal}}{Warwick Manufacturing Group (WMG)}{Coventry, UK}{}{
+	\begin{itemize}[topsep=0.0mm, itemsep=-1.0mm, leftmargin=7.0mm]
+		\vspace*{-0.1cm}	
+	\item Supervisor: Professor Richard McMahon
+	\item Research on battery and converter sizing and battery management algorithm by using MATLAB and Simulink 
+	\item Built a Simulink model, analysed data from house power monitor hub.
+	\end{itemize}
+}
+%\vspace*{-0.2cm}
+
+\cventry{\small\color{altColor} Jul. 2016 -- Aug. 2016}{Assistant System Administrator Internship\color{normal}}{TATA Consultancy Services}{Shanghai, China}{}{
+	\begin{itemize}[topsep=0.0mm, itemsep=-1.0mm, leftmargin=7.0mm]
+		\vspace*{-0.1cm}	
+		\item  Maintained operating systems such as updating software and ﬁxing users’ issues by remote control through client-server
+		\item Assembled and updated desktops for the company’s clients (Nelson and JP Morgan) \item Assisted the Information System team classify users’ network switch port
+	\end{itemize}
+}
+
+
+\cventry{\small\color{altColor} Jun. 2014 -- Jul. 2014}{Summer Internship\color{normal}}{China CITIC Bank}{Yangzhou, China}{}{
+	\begin{itemize}[topsep=0.0mm, itemsep=-1.0mm, leftmargin=7.0mm]
+		\vspace*{-0.1cm}	
+	\item Worked under Department of International Business
+	\item Learned how systems such as Swift, Chips work in BIS (bank for international settlements) 
+	\end{itemize}
+}
+
+
+
+\vspace*{-0.4cm}
+
+\section{Skills}
+
+\vspace*{-0.0cm}
+\cventry{}{}{Language}{\textnormal{\em \small\color{altColor}\color{normal}}}{}{
+	\vspace*{-0.6cm}
+	\begin{itemize}[topsep=0.0mm, itemsep=-1.0mm, leftmargin=7.0mm]
+		\item MATLAB, \LaTeX, Python, Verilog, C\# 
+	\end{itemize}
+}
+
+\section{Honours and Awards}
+
+\vspace*{-0.0cm}
+\cventry{}{}{URSS}{\textnormal{\em \small\color{altColor}Jun. 2019\color{normal}}}{}{
+	\vspace*{-1.1cm}
+}
+
+\vspace*{-0.7cm}
+\cventry{}{}{URSS}{\textnormal{\em \small\color{altColor}Jun. 2018\color{normal}}}{}{
+	\vspace*{-1.1cm}
+}
+
+
+
+\vspace*{-1.2cm}
+
+
+
+\section{Interests}
+\vspace*{-0.2cm}
+\cvline{}{\small C.}
+
+\vspace*{-0.4cm}
+
+
+\end{document}
